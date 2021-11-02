@@ -191,7 +191,7 @@ body {
 
   .content {
 
-    width: 425px;
+    /* width: 425px; */
     height: 100vh;
     top: 0;
     margin-bottom: 0px;
