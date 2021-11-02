@@ -179,9 +179,24 @@ body {
 
 }
 
+.info-forms .send_info {
+
+  background: #FFCD1E;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 8px;
+  text-align: center;
+  border: none;
+  width: 100%;
+  margin-top: 8px;
+  border-radius: 5px;
+
+}
+
 .form button {
 
-  background-color: #FFCD1E;
+  background: linear-gradient(90deg, #FF008E, #FFCD1E );
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
@@ -197,7 +212,7 @@ body {
 .form button a {
 
   color: #121214;
-  
+
 }
 
 

@@ -10,17 +10,8 @@ const linkSocialMedia = {
 
 }
 
-// if (localStorage.getItem('github') === null) {
-//   socialMediaData.github = 'Du-devBR'
-//   socialMediaData.facebook = 'https://www.facebook.com/eduardoananiasdasilva/'
-//   socialMediaData.youtube = 'https://www.youtube.com/in/UCOjh2L-G4nE69z6yR2D7cFA/'
-//   socialMediaData.twitter = 'https://twitter.com/teste'
-//   socialMediaData.instagram = 'https://www.instagram.com/eduardo.bills/'
 
-// }
-
-const changeInfos = () => {
-  // Storage user input values
+const sendInfosUsers = () => {
   localStorage.setItem('github', document.querySelector('.js-input-github').value);
   localStorage.setItem('instagram', document.querySelector('.js-input-instagram').value);
   localStorage.setItem('facebook', document.querySelector('.js-input-facebook').value);
@@ -30,14 +21,9 @@ const changeInfos = () => {
 
   getInfoGithub()
   changeLinkSocialMedia()
-  refresh()
+  reloadPage()
 
 }
-
-
-
-
-
 
 function changeLinkSocialMedia() {
   for (let li of socialLinks.children) {
@@ -67,5 +53,4 @@ function getInfoGithub() {
 
 getInfoGithub()
 
-
-const refresh = () => window.location.reload(true);
+const reloadPage = () => window.location.reload(true);
