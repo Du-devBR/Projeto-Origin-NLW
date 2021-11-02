@@ -19,9 +19,10 @@ const sendInfosUsers = () => {
   localStorage.setItem('twitter', document.querySelector('.js-input-twitter').value);
 
 
+  reloadPage()
   getInfoGithub()
   changeLinkSocialMedia()
-  reloadPage()
+
 
 }
 
