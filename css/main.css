@@ -25,10 +25,9 @@ body {
 
 .header {
 
-  margin: 64px 64px 0 64px;
+  padding: 64px ;
   display: flex;
   justify-content: space-between;
-  /* align-items: baseline; */
 
 }
 
@@ -52,3 +51,282 @@ body {
 
 }
 
+.content {
+
+  display: flex;
+  margin: 64px 64px;
+  gap: 64px;
+
+}
+
+.content .info-cta h1 {
+
+  font-size: 66px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 60px;
+  margin-bottom: 32px;
+
+}
+
+.content .info-cta p {
+
+  font-size: 20px;
+  font-weight: normal;
+  color: #fff;
+
+}
+
+.cta-arrow {
+
+  display: flex;
+  gap: 16px;
+  margin: 32px 0 64px 0;
+}
+
+
+.content .cta-arrow span {
+
+  font-size: 20px;
+  font-weight: bold;
+  color: #FFCD1E;
+
+}
+
+.content .info-cta .card-info p {
+
+  color: #121214;
+  font-size: 20px;
+  font-weight: bold;
+  max-width: 60%;
+  background-color: #FFCD1E;
+  text-align: center;
+  padding: 12px 46px;
+  border-radius: 5px;
+
+}
+
+.form {
+
+  border: solid 1px #FF008E ;
+  border-radius: 16px;
+  padding: 32px 64px;
+  background-color: hsl(0, 0%, 10%) ;
+
+}
+
+.form h2 {
+
+  font-size: 32px;
+  font-weight: bold;
+  color: #FFCD1E;
+
+}
+
+.form p {
+
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  margin: 16px 0;
+
+}
+
+.form .info-forms {
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+}
+
+.info-forms img {
+
+  width: 20px;
+  height: 20px;
+
+}
+
+.info-forms .input-social-media {
+
+  display: flex;
+  gap: 2px;
+}
+
+.info-forms .input-social-media label {
+
+  background-color: #121214;
+  width: 12%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.info-forms .input-social-media input {
+
+  background-color: #121214;
+  width: 88%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  padding: 0 16px;
+  color: #fff;
+
+}
+
+.form button {
+
+  background-color: #FFCD1E;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 17px;
+  text-align: center;
+  border: none;
+  width: 100%;
+  margin-top: 32px;
+  border-radius: 5px;
+
+}
+
+
+
+
+@media (max-width: 768px){
+
+  body .content {
+
+    display: flex;
+    flex-direction: column;
+    margin: 64px 64px;
+    gap: 64px;
+
+  }
+
+}
+
+
+@media (max-width: 425px){
+
+  .header {
+
+    background-image: url(../img/img_mobile/logo_mobile.png);
+    background-repeat: no-repeat;
+    margin: 16px;
+    padding: 16px 0;
+
+  }
+
+
+
+  .header .logo img {
+
+    display: none;
+
+  }
+
+
+
+  body .content {
+
+    margin: 64px 16px;
+    gap: 32px;
+
+  }
+
+  body .content .info-cta h1 {
+
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 30px;
+    margin-bottom: 16px;
+
+  }
+
+  body .content .info-cta p {
+
+    font-size: 16px;
+    font-weight: normal;
+    color: #fff;
+
+  }
+
+  .cta-arrow {
+
+    display: flex;
+    gap: 16px;
+    margin: 16px 0 32px 0;
+
+  }
+
+  .content .cta-arrow span {
+
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFCD1E;
+
+  }
+
+  .content .info-cta .card-info p {
+
+    color: #121214;
+    font-size: 14px;
+    font-weight: bold;
+    max-width: 100%;
+    background-color: #FFCD1E;
+    text-align: center;
+    padding: 12px 46px;
+    border-radius: 5px;
+
+  }
+
+  .form {
+
+    border: solid 1px #FF008E ;
+    border-radius: 16px;
+    padding: 32px 16px;
+    background-color: hsl(0, 0%, 10%) ;
+
+  }
+
+  .form h2 {
+
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFCD1E;
+
+  }
+
+  .form p {
+
+    font-size: 16px;
+    font-weight: normal;
+    color: #fff;
+    margin: 16px 0;
+
+  }
+
+
+.form button {
+
+  background-color: #FFCD1E;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 8px;
+  text-align: center;
+  border: none;
+  width: 100%;
+  margin-top: 32px;
+  border-radius: 5px;
+
+}
+
+
+}
