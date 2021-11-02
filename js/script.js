@@ -1,14 +1,43 @@
 
-
 const linkSocialMedia = {
 
-  github: prompt("Digite seu id do Github"),
-  youtube: "channel/UCOjh2L-G4nE69z6yR2D7cFA",
-  facebook: "Eduardo Ananias da Silva",
-  instagram: prompt("Digite seu login do Instagram"),
-  twitter: "twitter"
+  github: `${localStorage.getItem('github')}`,
+  youtube: `${localStorage.getItem('youtube')}`,
+  facebook: `${localStorage.getItem('facebook')}`,
+  instagram: `${localStorage.getItem('instagram')}`,
+  twitter: `${localStorage.getItem('twitter')}`
+
 
 }
+
+// if (localStorage.getItem('github') === null) {
+//   socialMediaData.github = 'Du-devBR'
+//   socialMediaData.facebook = 'https://www.facebook.com/eduardoananiasdasilva/'
+//   socialMediaData.youtube = 'https://www.youtube.com/in/UCOjh2L-G4nE69z6yR2D7cFA/'
+//   socialMediaData.twitter = 'https://twitter.com/teste'
+//   socialMediaData.instagram = 'https://www.instagram.com/eduardo.bills/'
+
+// }
+
+const changeInfos = () => {
+  // Storage user input values
+  localStorage.setItem('github', document.querySelector('.js-input-github').value);
+  localStorage.setItem('instagram', document.querySelector('.js-input-instagram').value);
+  localStorage.setItem('facebook', document.querySelector('.js-input-facebook').value);
+  localStorage.setItem('youtube', document.querySelector('.js-input-youtube').value);
+  localStorage.setItem('twitter', document.querySelector('.js-input-twitter').value);
+
+
+  getInfoGithub()
+  changeLinkSocialMedia()
+  refresh()
+
+}
+
+
+
+
+
 
 function changeLinkSocialMedia() {
   for (let li of socialLinks.children) {
@@ -37,3 +66,6 @@ function getInfoGithub() {
 
 
 getInfoGithub()
+
+
+const refresh = () => window.location.reload(true);

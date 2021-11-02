@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DoWhile-Redesign</title>
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./index_cracha.html">
 </head>
 
 <body>
@@ -32,35 +33,38 @@
       </div>
     </div>
     <div class="form">
-      <form action="">
+      <form action="javascript: enviar();">
         <h2>Seu cartão DoWhile exclusivo</h2>
         <p>Preencha os campos abaixo com seu Github e suas redes sociais</p>
         <div class="info-forms">
           <div class="input-social-media">
             <label for=""><img src="./img/img_desktop/Vector-github.png" alt=""></label>
-            <input type="text" placeholder="ID Github">
+            <input class="js-input-github" type="text" name="github"  placeholder="ID Github">
           </div>
           <div class="input-social-media">
             <label for=""><img src="./img/img_desktop/instagram.png" alt=""></label>
-            <input type="text" placeholder="ID Instagram">
+            <input type="text" name="instagram" class="js-input-instagram" placeholder="ID Instagram">
           </div>
           <div class="input-social-media">
             <label for=""><img src="./img/img_desktop/facebook.png" alt=""></label>
-            <input type="text" placeholder="ID Facebook">
+            <input type="text" name="facebook" class="js-input-facebook" placeholder="ID Facebook">
           </div>
           <div class="input-social-media">
             <label for=""><img src="./img/img_desktop/youtube.png" alt=""></label>
-            <input type="text" placeholder="ID Youtube">
+            <input type="text"name="youtube" class="js-input-youtube" placeholder="ID Youtube">
           </div>
           <div class="input-social-media">
             <label for=""><img src="./img/img_desktop/twitter.png" alt=""></label>
-            <input type="text" placeholder="ID Twitter">
+            <input type="text" name="twitter" class="js-input-twitter" placeholder="ID Twitter">
           </div>
+          <button type="reset" onclick="changeInfos()">enviar</button>
         </div>
-        <button type="submit">Veja seu cracha DoWhile</button>
+        <button><a href="./index_cracha.html">Veja seu cracha DoWhile</a></button>
       </form>
     </div>
   </main>
+
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
